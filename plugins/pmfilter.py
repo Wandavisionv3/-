@@ -765,7 +765,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="𝓛𝓸𝓪𝓭𝓲𝓷𝓰"
         ) 
         await query.message.edit_text(
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(          
@@ -808,7 +808,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="ⓅⒶⓇⓃⒶ🌸" 
         )
         await query.message.edit_text( 
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(          
@@ -851,7 +851,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="ⓅⒶⓇⓃⒶ🌸" 
         )
         await query.message.edit_text( 
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(          
@@ -894,7 +894,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="ⓅⒶⓇⓃⒶ🌸" 
         )
         await query.message.edit_text(
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(          
@@ -936,7 +936,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="ⓅⒶⓇⓃⒶ🌸" 
         )
         await query.message.edit_text( 
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)       
         await query.message.edit_text(
@@ -971,7 +971,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="ⓅⒶⓇⓃⒶ🌸" 
         ) 
         await query.message.edit_text( 
-            text="Ꮐᖇᗴᗴᑎ ᏞᗩᑎᎢᕼᗴᖇᑎ 🐉" 
+            text="ᔑᑕᗩᖇᏞᗴᎢ ᗯᏆᎢᑕᕼ🦹‍♀" 
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
