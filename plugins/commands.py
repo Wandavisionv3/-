@@ -54,10 +54,13 @@ async def start(client, message):
             ],[
             InlineKeyboardButton(' ✼CLOSE AND EXIT ✼', callback_data='close_data')
         ]]
-        await message.reply_chat_action("typing") 
-        m=await message.reply_sticker(sticker="CAACAgQAAxkBAAEL5tFiY3oBpm4OvDv6obeUkBpTW7agHgACeAMAAv4zDQbsHeCqycyShx4E") 
-
-        await asyncio.sleep(1.85) 
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAELhppiYBUEPKILlO95eIEAAZIK1EE7NncAAoYEAAJQeAFXKh7d3YIIQb4eBA")
+        await asyncio.sleep(1) 
+        await m.delete() 
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgIAAxkBAAJDcGJeybmY7cZy3OhGg7iNU9sV8P6QAAJUFgAC0HtBSfy5WNnzRlYoHgQ")
+        await asyncio.sleep(1) 
         await m.delete()
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -65,13 +68,8 @@ async def start(client, message):
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAAJz7GJe1cWeTB61Q3UCacX47XTjKiI_AAJ7AwACfvLFDJEhQi0JTzIDHgQ")
-        await asyncio.sleep(.23)
-        await m.delete()
-        return
-    if AUTH_CHANNEL and not await is_subscribed(client, message):
+       )
+        if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
@@ -108,9 +106,13 @@ async def start(client, message):
             ],[
             InlineKeyboardButton(' ✼CLOSE AND EXIT ✼', callback_data='close_data')
         ]]
-        await message.reply_chat_action("typing") 
-        m=await message.reply_sticker(sticker="CAACAgQAAxkBAAEL5tFiY3oBpm4OvDv6obeUkBpTW7agHgACeAMAAv4zDQbsHeCqycyShx4E") 
-        await asyncio.sleep(1.85)
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAELhppiYBUEPKILlO95eIEAAZIK1EE7NncAAoYEAAJQeAFXKh7d3YIIQb4eBA")
+        await asyncio.sleep(1)
+        await m.delete()
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgIAAxkBAAJDcGJeybmY7cZy3OhGg7iNU9sV8P6QAAJUFgAC0HtBSfy5WNnzRlYoHgQ")
+        await asyncio.sleep(1)
         await m.delete()
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -119,10 +121,6 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAAJz7GJe1cWeTB61Q3UCacX47XTjKiI_AAJ7AwACfvLFDJEhQi0JTzIDHgQ")
-        await asyncio.sleep(.23)
-        await m.delete()
         return
     data = message.command[1]
     try:
